@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets en Cybersécurité & Infrastructure – Hugo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mes projets en cybersécurité et infrastructure</h1>
+
+    <section>
+        <h2>1. Migrations d’infrastructure (Active Directory, Samba-AD, Microsoft 365)</h2>
+        <p>
+            J’ai mené plusieurs projets de migration pour des clients professionnels, notamment :
+        </p>
+        <ul>
+            <li>Migration de noms de domaine et messagerie d’o2switch vers Microsoft 365</li>
+            <li>Migration d’un serveur Samba-AD vers un nouveau contrôleur</li>
+            <li>Migration d’un Active Directory complet vers une nouvelle structure</li>
+        </ul>
+        <p>
+            <strong>Objectif :</strong> garantir la continuité des services, améliorer la sécurité et centraliser la gestion des utilisateurs.
+        </p>
+        <p>
+            <strong>Ce que ça m’a apporté :</strong> j’ai appris à planifier et exécuter des migrations complexes en environnement réel, à gérer les risques liés à la perte de données et à manipuler les outils d’administration avancée de Microsoft et Samba. Cela m’a aussi permis de renforcer ma rigueur et ma réactivité face aux imprévus.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Analyse forensique de mémoire et de disque</h2>
+        <p>
+            J’ai réalisé plusieurs travaux pratiques en forensic dans un contexte d’enquête numérique :
+        </p>
+        <ul>
+            <li><strong>Dump mémoire :</strong> Analyse avec Volatility 2 d’une machine Windows 7 (profil Win7SP1x86). Objectif : démontrer l’utilisation d’une clé USB pour exfiltrer un fichier confidentiel.</li>
+            <li><strong>Image disque :</strong> Analyse complète d’un disque pour identifier des traces de manipulation ou de suppression de fichiers sensibles.</li>
+        </ul>
+        <p>
+            <strong>Ce que j’ai appris :</strong> à manipuler des outils comme Volatility, Autopsy, à reconstruire une chronologie d’événements, et à rédiger un rapport d’investigation professionnel dans un style clair et structuré comme un rapport d’incident.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Sécurisation d’un logiciel métier exposé à Internet</h2>
+        <p>
+            Pour un client utilisant <strong>Omniware</strong>, un logiciel métier exposé publiquement, j’ai mis en place une architecture de sécurité robuste face à une menace de brute force.
+        </p>
+        <p><strong>Objectif :</strong> empêcher toute compromission par attaque automatisée sur mot de passe faible.</p>
+        <p><strong>Démarche :</strong></p>
+        <ol>
+            <li>Mise en place d’un <strong>pare-feu et d’un VPN</strong> pour restreindre l’accès au logiciel.</li>
+
+            <li><strong>Suggestions supplémentaires en cas de budget le permettant :</strong></li>
+            <li>Déploiement d’un serveur <strong>Keycloak</strong> pour activer la double authentification (MFA TOTP).</li>
+            <li>Utilisation de <strong>Bitwarden</strong> pour une gestion sécurisée des mots de passe et TOTP.</li>
+        </ol>
+        <p>
+            <strong>Impact :</strong> Le logiciel n’est plus accessible directement depuis Internet. En cas d'amélioration dans le futur avec mes propositions : l’authentification sera renforcée, et tous les secrets seront centralisés et chiffrés.
+        </p>
+        <p>
+            <strong>Compétences développées :</strong> architecture réseau sécurisée, gestion des identités, configuration VPN, outils de pentest et gestion des risques.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Sauvegarde automatique de firewall (pfSense)</h2>
+        <p>
+            J’ai développé un script pour automatiser la <strong>sauvegarde des configurations pfSense</strong> via leur port d’administration, pour plusieurs clients.
+        </p>
+        <p>
+            <strong>But :</strong> garantir une récupération rapide après sinistre ou mauvaise manipulation.
+        </p>
+        <p>
+            <strong>Fonctionnement :</strong> le script se connecte régulièrement à l’interface d’administration pour récupérer le fichier de configuration XML, qui est ensuite stocké de manière sécurisée sur un serveur de backup.
+        </p>
+        <p>
+            <strong>Ce que ça m’a appris :</strong> automatisation, sécurité des backups, et scripting orienté production. C’est un gain de temps considérable pour moi et une garantie de sérénité pour mes clients.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Mise en place d'un service de gestion de projet</h2>
+        <p>
+            Afin de mieux organiser mes projets et de collaborer efficacement avec mes collègues, j’ai mis en place un service de gestion de projet, nommé Openproject.
+        </p>
+        <p>
+            <strong>But :</strong> garantir une gestion fluide des tâches, des délais et des ressources.
+        </p>
+        <p>
+            <strong>Fonctionnement :</strong> Openproject permet de créer des projets, d’y ajouter des tâches, de définir des délais et d’assigner des ressources. Possibilité pour les clients de suivre l’avancement en temps réel et communiquer directement via la plateforme.
+        </p>
+        <p>
+            <strong>Ce que ça m’a appris :</strong> Configuration d'un service en Docker, création d'un reverse-proxy, mise en place d'un pare-feu virtuel, notion de DNS, gestion de projet, et utilisation d’outils de suivi. Cela a considérablement amélioré ma productivité et la satisfaction de mes clients.
+        </p>
+    </section>
+
+
+</body>
+</html>
